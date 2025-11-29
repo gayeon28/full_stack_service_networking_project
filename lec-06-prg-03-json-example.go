@@ -3,11 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"os"
 )
 
-func ()  {
-	
+type SuperHero struct {
+	HomeTown string `json:"homeTown"`
+	Active   bool   `json:"active"`
 	Members  []Member `json:"members"`
 }
 
