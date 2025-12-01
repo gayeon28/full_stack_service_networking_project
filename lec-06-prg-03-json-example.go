@@ -8,8 +8,8 @@ import (
 )
 
 type SuperHero struct {
-	HomeTown string `json:"homeTown"`
-	Active   bool   `json:"active"`
+	HomeTown string   `json:"homeTown"`
+	Active   bool     `json:"active"`
 	Members  []Member `json:"members"`
 }
 
@@ -18,7 +18,7 @@ type Member struct {
 	// 여기에 다른 필드를 추가 가능
 }
 
-func main()  {
+func main() {
 	fileName := "lec-06-prg-03-json-example.json"
 
 	// 1. 파일 읽기 (Python의 open() + read() 역할)
