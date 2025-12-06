@@ -108,7 +108,7 @@ func (m *MembershipHandler) update(w http.ResponseWriter, r *http.Request, membe
 	}
 	
 	// 본문 데이터를 폼 형식(URL 쿼리 형식)으로 파싱
-	values, err := parseFormData(string(body))
+	values := parseFormData(string(body))
 	if err != nil {
 		handleErrorResponse(w, memberID, "Invalid PUT body format", http.StatusBadRequest)
 		return
